@@ -1,0 +1,7 @@
+name = Apel Global
+description = Centralise tous les développements globaux du site.
+package = Apel
+version = VERSION
+core = 7.x
+dependencies[] = panels
+plugins[panels][layouts] = panels/layouts

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+
+function apel_global_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'panels' || $module == 'ctools') {
+    return 'plugins/' . $plugin;
+  }
+}
+/**
+* Implements hook_entity_info_alter().
+*/
+function apel_global_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['front_teaser'] = array(
+    'label' => t('Front teaser'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['node']['view modes']['doc_link'] = array(
+    'label' => t('document lier'),
+    'custom settings' => TRUE,
+  );
+}

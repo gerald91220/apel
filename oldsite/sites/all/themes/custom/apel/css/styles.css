@@ -1,0 +1,552 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+/*Menu*/
+header{
+
+}
+a:hover,
+h2 a:hover{
+    color: #2c8f63;
+}
+.pane-page-logo{
+    width: 8%; 
+    display: inline-block;
+}
+.pane-system-main-menu,
+.pane-search-form{
+    float: right;
+}
+.pane-system-main-menu ul.menu li{
+    float: left;
+    list-style:none;
+    margin-left: 4em;
+
+}
+.pane-system-main-menu ul.menu li a{
+    text-decoration: none; 
+    color: rgb(43,142,98);
+}
+.pane-system-main-menu ul.menu li a:hover{
+    color: rgb(11,85,52);
+}
+.page-accueil header .pane-page-title h1,
+.page-accueil header .pane-page-content .pane-title{
+    display: none;
+}
+
+#main-content,
+.pane-articles{
+    clear: both;
+}
+.logged-in #admin-menu #admin-menu-icon .admin-menu-icon .admin-menu-icon{
+    width: 16px;
+}
+.page-accueil #main-content .pane-page-content > h2.pane-title{
+    display: none;
+}
+
+.views-field-title,
+.views-field-field-image{
+    float: left;
+}
+.views-field-field-image{
+    width: 66.6%;
+}
+.views-field-title{
+    width: 33.4%;
+}
+.page-accueil  .views-field-title{
+    width: 360px;
+    height: 360px;
+    background: #efedee;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+}
+.page-accueil  .views-field-title a{
+    color: #0474be;
+    text-decoration: none;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 27px;
+    right: 21px;
+
+}
+.page-accueil .views-field-title{
+    text-align: right;
+}
+
+.page-accueil .pane-articles .view-articles .views-row,
+.page-accueil .pane-evenement .view-evenement .views-row{
+    width: 360px;
+    float: left;
+    margin-left: 54px;
+}
+.page-accueil .pane-articles .view-articles .views-row:nth-child(1),
+.page-accueil .pane-evenement .view-evenement .views-row:nth-child(1){
+    margin-left: 0px;
+}
+.page-accueil .pane-articles .view-articles .view-footer,
+.page-accueil .pane-evenement .view-evenement .view-footer{
+    clear: both;
+    text-align: right;
+}
+.page-accueil .pane-articles .view-articles .views-row h2 a,
+.page-accueil .pane-evenement .view-evenement .views-row h2 a{
+    font-size: 0.8em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.page-accueil .pane-articles .view-articles .views-row h2,
+.page-accueil .pane-evenement .view-evenement .views-row h2{
+    line-height: 1.3em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+
+}
+.page-accueil .pane-articles .view-articles .view-mode-front_teaser .field-name-field-chapo,
+.page-accueil .pane-evenement .view-evenement  .view-mode-front_teaser .field-name-field-chapo,
+.page-accueil .pane-evenement .view-evenement  .view-mode-front_teaser .field-name-field-date{
+    padding-bottom: 30px;
+}
+.page-accueil .pane-evenement .view-evenement  .view-mode-front_teaser .field-name-field-date{
+    color:#7a7a7a;
+    font-weight: 700;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+.page-accueil .pane-articles .view-articles .view-footer,
+.page-accueil .pane-evenement .view-evenement .view-footer{
+    padding-top: 50px;
+}
+.page-accueil .pane-articles .view-articles .view-footer a,
+.page-accueil .pane-evenement .view-evenement .view-footer a{
+    padding: 20px 0px;
+    padding-left: 58px;
+    color: #0474be;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: url(../images/icons/plus-bleu.png)1px 17px no-repeat;
+    font-size: 25px;
+    font-weight: 800;
+}
+.page-accueil .pane-articles .view-articles .view-footer a:hover,
+.page-accueil .pane-evenement .view-evenement .view-footer a:hover{
+    background: url(../images/icons/plus-vert.png)1px 17px no-repeat; 
+    color: #2c8f63 !important;
+}
+footer {
+    text-align: center;
+    background: #344151;
+}
+footer .menu li{
+    display: inline-block;
+
+}
+footer .menu li a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 80px;
+}
+footer .menu li:nth-child(1) a{
+    margin-left: 0px;
+}
+footer .menu {
+    margin-bottom: 0px;
+
+    padding-top: 20px;
+    padding-bottom:  20px;
+
+}
+.page-accueil h2.pane-title{
+    font-size: 43px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+.page-accueil .pane-evenement h2.pane-title{
+    margin-top: 75px;
+    padding-top: 25px;
+    border-top: 2px solid #0474be;
+}
+.page-accueil .pane-page-content .pane-title{
+    display: block;
+    margin-bottom: 0px;
+}
+.pane-page-content .pane-title{
+    display:none;
+}
+.pane-page-title h1{
+    font-size: 43px;
+    font-weight: 500;
+    text-transform: uppercase;  
+}
+.block-image,
+.block-content{
+    float: left;
+    display: block;
+}
+.block-content h2.node-title a{
+    color: #2c8f63;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.block-content{
+    width: 850px;
+    padding-left: 50px;
+    background: #ece9e9;
+    height: 191px;
+    overflow: hidden;
+
+}
+.page-evenements .view-evenement .views-row,
+.page-articles .view-articles .views-row{
+    margin-bottom: 14px;
+}
+a:hover,
+h2 a:hover{
+    color: #0474be !important;
+}
+
+.view-article .view-footer a:hover,
+.view-evenement .view-footer a:hover{
+    color:#2c8f63 !important; 
+}
+.links a{
+    text-decoration: none;
+    color: #0474be;
+    font-weight: 700;
+}
+.pager .pager-current, 
+.pager .pager-item a, 
+.pager .pager-next a, 
+.pager .pager-previous a{
+    height: 25px;
+    width: 27px;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: initial;
+    display: inline-block;
+    padding: 2px 0 0 0;
+    text-decoration: none; 
+}
+.pager .pager-current {
+    background: #344151;
+    color: white;
+}
+.pager .pager-item a {
+    background: #f0eeee;
+    color: black;
+}
+
+/*Page liste events*/
+.page-evenements #views-exposed-form-evenement-page-1 {
+    height: 145px;
+    overflow: hidden;
+    background: #ece9e9;
+    padding: 70px 30px 0px 25px;
+    position: relative;
+    margin-top: 0px;
+}
+
+.page-evenements #views-exposed-form-evenement-page-1 .views-exposed-widget label {
+    /* display: inline-block; */
+    float: left;
+
+    font-size: 16px;
+    font-weight: bold;
+    color:  #2c8f63;
+    padding-top: 2px;
+    width: 152px;
+    text-align: right;
+    text-transform: uppercase;
+}
+.page-evenements #views-exposed-form-evenement-page-1 .description{
+    font-family: 'Open Sans';
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.page-evenements #views-exposed-form-evenement-page-1 .views-exposed-widget .views-widget {
+    display: inline-block;
+    float: left;
+}
+.page-evenements #views-exposed-form-evenement-page-1  .views-exposed-widget input {
+    height: 30px;
+    width: 300px;
+    border: none;
+    margin-left: 9px;
+    padding-left: 10px;
+}
+.page-evenements #views-exposed-form-evenement-page-1 .views-exposed-widget .form-type-textfield {
+    position: relative;
+    padding-right: 50px;
+}
+.page-evenements #views-exposed-form-evenement-page-1 .description:after{
+    background: url(../images/icons/calendar-vert.png) 0px -0px no-repeat;
+    position: absolute;
+    content: '';
+    height: 27px;
+    width: 26px;
+    display: block;
+    top: 1px;
+    right: 58px;
+
+}
+.page-evenements #views-exposed-form-evenement-page-1 .views-widget-filter-title label{
+    width: auto;
+}
+
+
+.page-evenements #views-exposed-form-evenement-page-1  .views-exposed-widget input#edit-submit-evenement{
+
+    width: 152px;
+    background: #2c8f63;
+    font-family: 'Open Sans Condensed',helvetica;
+    font-size: 30px;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0;
+    padding-top: 56px;
+    padding-bottom: 100px;
+    top: -50px;
+    right: -27px
+}
+.page-evenements #views-exposed-form-evenement-page-1  .views-exposed-widget input#edit-submit-evenement:hover{
+    background: #0474be;  
+}
+.view-evenement .view-header{
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-bottom: 50px;
+    border-bottom: 10px solid #ece9e9;
+    margin-bottom: 50px   
+}
+
+.page-evenements .node-evenement .field-name-field-date,
+.node-evenement .field-name-field-date{
+    color: #7a7a7a;
+    font-weight: 700;
+    font-size: 0.8em;
+}
+.page-evenements .view-evenement .node-evenement .block-content .field-name-field-chapo{
+    margin-top: 25px;
+}
+.panel-2col-stacked .panel-col-first{
+    width: 70%;
+}
+.panel-2col-stacked .panel-col-last{
+    width: 30%;
+}
+.panel-col-last .pane-title{
+    display: block;
+}
+.view-mode-full .field-name-field-tags{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #302b6b;
+    padding-right: 10px;
+    margin-right: 10px; 
+    margin-bottom:25px;
+}
+.view-mode-full .field-name-field-chapo {
+    font-weight: 500;
+}
+.panel-col-last .pane-bloc .pane-title{
+    margin-top: 0px;
+}
+.panel-col-last .pane-bloc.a-lire-aussi{
+    display: block;
+    background: #b6d9ef;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 22px;
+    border-right: 10px solid #0474be;
+    margin-bottom: 50px;
+}
+.panel-col-last .pane-bloc .views-field-title{
+    float: none;
+    width: auto;
+}
+.panel-col-first article{
+    width: 800px;  
+}
+.panel-col-last .pane-bloc .views-field-title .field-content a{
+    background: url(../images/icons/arrow-right-black.png) 0px 4px no-repeat;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.panel-col-last .pane-evenement,
+.panel-col-last .pane-articles{
+    display: block;
+    background: #2c8f63;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 22px;
+    border-right: 10px solid #0c5635;
+}
+.panel-col-last .pane-evenement,
+.panel-col-last .pane-evenement a,
+.panel-col-last .pane-articles,
+.panel-col-last .pane-articles a{
+    color: #ffffff;
+}
+.panel-col-last .pane-evenement a,
+.panel-col-last .pane-articles a{
+    text-decoration: none;
+}
+.panel-col-last .pane-evenement .file a:hover,
+.panel-col-last .pane-articles .file a:hover{
+    color: #0c5635!important;
+}
+.page-node .node-evenement .field-name-field-date{
+    margin-bottom: 20px; 
+}
+.pane-search-form{
+    float:right;
+}
+#page > header{
+    border-bottom:10px solid #2c8f63;
+}
+.pane-search-form{
+    margin-top: 22px;
+}
+.pane-search-form #search-block-form{
+    position: relative;
+}
+
+#search-block-form #edit-actions--2 .form-submit,
+#search-block-form #edit-actions .form-submit{
+    background: url(../images/icons/loupe-vert.png) 0px -5px no-repeat;
+    border: none;
+    font-size: 0px;
+    width: 50px;
+    height: 44px;
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+#search-block-form #edit-search-block-form--2{
+    border: medium none;
+    color: #000000;
+    font-family: arial;
+    font-size: 14px;
+    height: 43px;
+    width: 273px;
+    background: #ece9e9; 
+    padding-left: 20px;
+}
+.pane-search-form{
+    margin-left: 50px;
+}
+ul.menu{
+    margin-top: 32px; 
+}
+/*Contact*/
+.webform-client-form label
+{
+    float: left;
+    width: 37%;
+}
+.webform-client-form input{
+    width: 40%;
+    border: medium none;
+    color: #000000;
+    font-family: arial;
+    font-size: 14px;
+    height: 43px;
+    background: #ece9e9;
+    padding-left: 20px;
+}
+.webform-client-form label{
+    text-align: right;
+    margin-right: 25px;
+    padding-top: 12px;
+}
+.webform-client-form textarea{
+    border: medium none;
+    color: #000000;
+    font-family: arial;
+    font-size: 14px;
+    background: #ece9e9;
+    padding-left: 20px;
+    width: 100%;
+}
+.webform-client-form .form-textarea-wrapper{
+    width: 40%;
+    float: left;
+}
+.webform-client-form  .form-actions{
+    margin-left: 39%;
+    clear: both;
+}
+.webform-client-form  .form-actions input{
+    width: 240px;
+    background: #2c8f63;
+    font-family: 'Open Sans Condensed',helvetica;
+    font-size: 23px;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 49px;
+
+    margin-top: 49px;
+}
+.resizable-textarea .grippie{
+    background: none;
+    border: none; 
+}
+.view-display-id-block_autopromo .views-row,
+.panel-col-last .pane-evenement,
+.panel-col-last .pane-articles{
+    margin-bottom: 50px; 
+}
+
+.view-display-id-block_autopromo .views-row header h2{
+    display: block;
+    background: #0474be;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 22px;
+    border-right: 10px solid #b6d9ef;
+    color:#ffffff;
+    text-transform: capitalize;
+}
+
+
